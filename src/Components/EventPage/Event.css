@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 16px; /* Define a base font size */
+}
+
+/* Set the background color to black (#000) */
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif; /* Specify a fallback font-family */
+}
+
+/* Style the hero section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    padding: 100px; /* Adjust the padding to your preference */
+    display: flex; /* Add display flex to the hero section */
+    align-items: center; /* Center vertically within the hero section */
+}
+
+.col-left {
+    display: flex;
+    align-items: center; /* Center vertically within the left column */
+    margin-right: 200px; /* Add margin to create space between text and image */
+}
+
+.text h1 {
+    font-size: 5rem;
+    color: #006fee;
+    margin: 0; /* Remove default margin on h1 */
+    font-weight: 700;
+}
+
+.col-right {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 100px;
+}
+
+.bugymania {
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+.bugymania img {
+    width: 600px;
+    height: 600px;
+}
+
+.bugymania::after {
+    content: '';
+    position: absolute;
+    left: 25px; /* Remove the plus sign before 25px */
+    top: -25px;
+    height: 100%;
+    width: 100%;
+    border: 5px solid #006fee;
+    z-index: -1;
+}
+/* Add these CSS rules to style the paragraph and button */
+.text p {
+    font-size: 20px; /* Adjust the font size */
+    color: #fff;
+    font-weight: 700; /* Text color */
+    margin-top: 70px; /* Add spacing below the paragraph */
+    text-align: center;
+  }
+  
+/* Styles for the scroll link (you can adjust these as needed) */
+.text .scroll-link {
+    background-color: #006fee;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+    margin: 30px 0px 0 250px;
+    font-weight: 700;
+    text-decoration: none; /* Remove the default underline for links */
+    display: inline-block; /* Display as an inline-block element */
+    line-height: 1; /* Remove extra line-height for inline elements */
+    text-align: center;
+}
+
+.text .scroll-link:hover {
+    background-color: #0050aa;
+}
+
+/* Add styling for the "about" section */
+#about {
+    background-color: #000; /* Black background color */
+    text-align: center; /* Center-align the heading */
+    padding: 40px 0; /* Add padding to create space around the content */
+  }
+  
+.about-content h2 {
+color: #fff; /* Heading text color */
+font-size: 4.5rem; /* Adjust the font size as needed */
+font-weight: 500;
+}
+.about-content h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: #006fee;
+    bottom: -25;
+    left: calc(50% - 90px);}
+  
+.highlight {
+    color: #006fee; /* Highlighted text color */
+    font-weight: bold; /* Highlighted text font weight */
+    font-size: 1.5rem;
+}
+    
+    /* Additional styling for the paragraphs */
+.about-content .paras
+{
+    text-align: center; /* Center-align the entire text block */
+    margin: 0 200px; /* Add left and right margins for centering effect */
+
+}
+.about-content .paras p {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: #fff; /* Paragraph text color */
+    margin: 40px 0; /* Add spacing between paragraphs */
+    text-align: left; /* Center-align the paragraphs */
+}
+      
+/* Add your existing CSS rules here */
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack columns on small screens */
+        padding: 50px;
+    }
+
+    .text h1 {
+        font-size: 3.5rem;
+        margin: 10px 0;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .col-left, .text p {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .col-right {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .bugymania {
+        margin-top: 70px;
+        margin-left: 100px;
+        width: 300px;
+        height: 350px;
+    }
+
+    .bugymania img {
+        margin-top: -5px;
+        margin-left: -36px;
+        width: 300px;
+        height: 350px;
+    }
+    .bugymania::after {
+        left: 10px;
+        bottom: -10px;
+        height: 95%;
+        width: 95%;
+    }
+
+    .text .scroll-link {
+        margin: 20px 0;
+    }
+
+    .about-content .paras {
+        margin: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    
+    .about-content h2 {
+        font-size: 4rem;
+    }
+}
+

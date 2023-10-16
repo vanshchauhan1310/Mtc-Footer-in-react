@@ -4,7 +4,6 @@ import Logo1 from './Assets/logo1.png'
 import Logo2 from './Assets/logo 2.png'
 
 
-
 function Footer() {
   return (
     
